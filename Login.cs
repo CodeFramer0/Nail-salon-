@@ -19,13 +19,13 @@ namespace Nail_salon
         {
             InitializeComponent();
         }
-      
+
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var name = textBox1.Text;
-            var phone = textBox2.Text;
-           
+            var name = "123";
+            var phone = "123";
+
 
             using (var connection = new SqliteConnection("Data Source=usersdata.db"))
             {
@@ -47,9 +47,9 @@ namespace Nail_salon
                                 int id = reader.GetInt16(0);
 
 
-                               
+
                             }
-                            
+
 
                         }
 
@@ -62,8 +62,8 @@ namespace Nail_salon
                             insertCmd.Parameters.AddWithValue("phone", phone);
                             insertCmd.Parameters.AddWithValue("name", name);
                             insertCmd.ExecuteNonQuery();
-                            
-                           
+
+
 
 
 
@@ -73,7 +73,7 @@ namespace Nail_salon
                             insertCmd.CommandText = "update Config set active_phone=@active_phone";
                             insertCmd.Parameters.AddWithValue("active_phone", phone);
                             insertCmd.ExecuteNonQuery();
-                            
+
                         }
                         Debug.WriteLine(name);
                         if (name == "admin")
@@ -95,21 +95,19 @@ namespace Nail_salon
                 {
                     Debug.WriteLine(error.Message);
                     MessageBox.Show("Ошибка");
-                    
+
                 }
-               
-                   
-                
-            
+
+
+
+
+            }
         }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
         }
-
-    
-
-
-
-
-
     }
 }
 
