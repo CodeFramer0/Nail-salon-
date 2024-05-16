@@ -55,6 +55,7 @@
             // button1
             // 
             button1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            button1.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             button1.BackColor = Color.Black;
             button1.Font = new Font("Reem Kufi", 12F, FontStyle.Bold, GraphicsUnit.Point);
             button1.ForeColor = Color.AliceBlue;
@@ -125,12 +126,12 @@
             linkLabel1.TabIndex = 13;
             linkLabel1.TabStop = true;
             linkLabel1.Text = "Нет аккаунта?";
+            linkLabel1.LinkClicked += linkLabel1_LinkClicked;
             // 
             // Login
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            AutoSize = true;
             BackColor = Color.AliceBlue;
             ClientSize = new Size(984, 561);
             Controls.Add(linkLabel1);
@@ -142,6 +143,7 @@
             Controls.Add(label1);
             Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
             Name = "Login";
             Text = "Страница авторизации";
             TransparencyKey = Color.FromArgb(192, 0, 0);
