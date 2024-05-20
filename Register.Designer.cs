@@ -112,6 +112,7 @@
             button1.TabIndex = 15;
             button1.Text = "Создать  аккаунт";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // label1
             // 

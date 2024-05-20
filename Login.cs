@@ -8,15 +8,18 @@ namespace Nail_salon
         public Login()
         {
             InitializeComponent();
+            db db = new();
+            db.createTables();
         }
 
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender,EventArgs e)
         {
-           
-
 
         }
+
+
+        
 
         private void Login_Load(object sender, EventArgs e)
         {
