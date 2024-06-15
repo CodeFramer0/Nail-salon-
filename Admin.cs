@@ -18,10 +18,36 @@ namespace Nail_salon
 
         private void Admin_Load(object sender, EventArgs e)
         {
-            dataGridView1.Rows.Clear();
-            dataGridView1.BorderStyle = BorderStyle.FixedSingle;
+
 
         }
-        
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            AdminAccounts adminAccounts = new();
+            adminAccounts.Show();
+            this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            AdminServices adminServices = new();
+            this.Hide();
+            adminServices.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            AdminAnalytics adminAnalytics = new();
+            this.Hide();
+            adminAnalytics.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            AdminSchedule adminSchedule = new();
+            adminSchedule.Show();
+            this.Hide();
+        }
     }
 }

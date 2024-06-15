@@ -28,64 +28,159 @@
         /// </summary>
         private void InitializeComponent()
         {
-            dataGridView1 = new DataGridView();
-            Column1 = new DataGridViewTextBoxColumn();
-            Column2 = new DataGridViewTextBoxColumn();
-            Column3 = new DataGridViewTextBoxColumn();
-            Column4 = new DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            pictureBox1 = new PictureBox();
+            button3 = new Button();
+            button2 = new Button();
+            button1 = new Button();
+            label1 = new Label();
+            pictureBox2 = new PictureBox();
+            button4 = new Button();
+            button5 = new Button();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
-            // dataGridView1
+            // pictureBox1
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3, Column4 });
-            dataGridView1.Location = new Point(2, 1);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.Size = new Size(444, 437);
-            dataGridView1.TabIndex = 0;
-            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
+            pictureBox1.Image = Properties.Resources.user_svgrepo_com;
+            pictureBox1.Location = new Point(7, 39);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(66, 50);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 24;
+            pictureBox1.TabStop = false;
             // 
-            // Column1
+            // button3
             // 
-            Column1.HeaderText = "Column1";
-            Column1.Name = "Column1";
+            button3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            button3.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            button3.BackColor = Color.Black;
+            button3.Font = new Font("Palatino Linotype", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            button3.ForeColor = Color.AliceBlue;
+            button3.Location = new Point(275, 359);
+            button3.Name = "button3";
+            button3.Size = new Size(303, 99);
+            button3.TabIndex = 23;
+            button3.Text = "Отчеты и аналитика";
+            button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
             // 
-            // Column2
+            // button2
             // 
-            Column2.HeaderText = "Column2";
-            Column2.Name = "Column2";
+            button2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            button2.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            button2.BackColor = Color.Black;
+            button2.Font = new Font("Palatino Linotype", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            button2.ForeColor = Color.AliceBlue;
+            button2.Location = new Point(275, 241);
+            button2.Name = "button2";
+            button2.Size = new Size(303, 99);
+            button2.TabIndex = 22;
+            button2.Text = "Услуги";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
-            // Column3
+            // button1
             // 
-            Column3.HeaderText = "Column3";
-            Column3.Name = "Column3";
+            button1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            button1.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            button1.BackColor = Color.Black;
+            button1.Font = new Font("Palatino Linotype", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            button1.ForeColor = Color.AliceBlue;
+            button1.Location = new Point(275, 126);
+            button1.Name = "button1";
+            button1.Size = new Size(303, 99);
+            button1.TabIndex = 21;
+            button1.Text = "Учетные записи";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
-            // Column4
+            // label1
             // 
-            Column4.HeaderText = "Column4";
-            Column4.Name = "Column4";
+            label1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            label1.AutoSize = true;
+            label1.FlatStyle = FlatStyle.System;
+            label1.Font = new Font("Palatino Linotype", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = SystemColors.ActiveCaptionText;
+            label1.Location = new Point(257, 39);
+            label1.Name = "label1";
+            label1.Size = new Size(295, 32);
+            label1.TabIndex = 20;
+            label1.Text = "Меню администратора";
+            label1.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = Properties.Resources.logo;
+            pictureBox2.ImageLocation = "";
+            pictureBox2.Location = new Point(631, 14);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(191, 134);
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox2.TabIndex = 19;
+            pictureBox2.TabStop = false;
+            // 
+            // button4
+            // 
+            button4.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            button4.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            button4.BackColor = Color.Black;
+            button4.Font = new Font("Palatino Linotype", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            button4.ForeColor = Color.AliceBlue;
+            button4.Location = new Point(571, 617);
+            button4.Name = "button4";
+            button4.Size = new Size(242, 63);
+            button4.TabIndex = 25;
+            button4.Text = "Назад";
+            button4.UseVisualStyleBackColor = false;
+            // 
+            // button5
+            // 
+            button5.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            button5.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            button5.BackColor = Color.Black;
+            button5.Font = new Font("Palatino Linotype", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            button5.ForeColor = Color.AliceBlue;
+            button5.Location = new Point(275, 473);
+            button5.Name = "button5";
+            button5.Size = new Size(303, 99);
+            button5.TabIndex = 26;
+            button5.Text = "Расписание мастеров";
+            button5.UseVisualStyleBackColor = false;
+            button5.Click += button5_Click;
             // 
             // Admin
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(7F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(dataGridView1);
+            ClientSize = new Size(825, 694);
+            Controls.Add(button5);
+            Controls.Add(button4);
+            Controls.Add(pictureBox1);
+            Controls.Add(button3);
+            Controls.Add(button2);
+            Controls.Add(button1);
+            Controls.Add(label1);
+            Controls.Add(pictureBox2);
+            Font = new Font("Palatino Linotype", 9F, FontStyle.Regular, GraphicsUnit.Point);
             Name = "Admin";
             Text = "Admin";
             Load += Admin_Load;
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
-        private DataGridView dataGridView1;
-        private DataGridViewTextBoxColumn Column1;
-        private DataGridViewTextBoxColumn Column2;
-        private DataGridViewTextBoxColumn Column3;
-        private DataGridViewTextBoxColumn Column4;
+        private PictureBox pictureBox1;
+        private Button button3;
+        private Button button2;
+        private Button button1;
+        private Label label1;
+        private PictureBox pictureBox2;
+        private Button button4;
+        private Button button5;
     }
 }

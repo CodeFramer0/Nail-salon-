@@ -42,10 +42,10 @@
             // linkLabel1
             // 
             linkLabel1.AutoSize = true;
-            linkLabel1.Font = new Font("Reem Kufi", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            linkLabel1.Location = new Point(316, 471);
+            linkLabel1.Font = new Font("Palatino Linotype", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            linkLabel1.Location = new Point(316, 534);
             linkLabel1.Name = "linkLabel1";
-            linkLabel1.Size = new Size(182, 28);
+            linkLabel1.Size = new Size(148, 22);
             linkLabel1.TabIndex = 20;
             linkLabel1.TabStop = true;
             linkLabel1.Text = "Уже  есть  аккаунт?";
@@ -54,11 +54,11 @@
             // maskedTextBox1
             // 
             maskedTextBox1.BackColor = Color.Silver;
-            maskedTextBox1.Font = new Font("Reem Kufi", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            maskedTextBox1.Location = new Point(261, 317);
+            maskedTextBox1.Font = new Font("Palatino Linotype", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            maskedTextBox1.Location = new Point(261, 359);
             maskedTextBox1.Mask = "+7(999)-000-0000";
             maskedTextBox1.Name = "maskedTextBox1";
-            maskedTextBox1.Size = new Size(289, 31);
+            maskedTextBox1.Size = new Size(289, 29);
             maskedTextBox1.TabIndex = 19;
             maskedTextBox1.TextAlign = HorizontalAlignment.Center;
             // 
@@ -66,11 +66,11 @@
             // 
             label3.AutoSize = true;
             label3.FlatStyle = FlatStyle.System;
-            label3.Font = new Font("Reem Kufi", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.Font = new Font("Palatino Linotype", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             label3.ForeColor = SystemColors.ActiveCaptionText;
-            label3.Location = new Point(272, 151);
+            label3.Location = new Point(289, 170);
             label3.Name = "label3";
-            label3.Size = new Size(276, 28);
+            label3.Size = new Size(270, 26);
             label3.TabIndex = 18;
             label3.Text = "Студия  ногтевого  сервиса";
             label3.TextAlign = ContentAlignment.MiddleCenter;
@@ -79,9 +79,9 @@
             // 
             pictureBox1.Image = Properties.Resources.logo;
             pictureBox1.ImageLocation = "";
-            pictureBox1.Location = new Point(289, 11);
+            pictureBox1.Location = new Point(289, 12);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(234, 137);
+            pictureBox1.Size = new Size(234, 155);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 17;
             pictureBox1.TabStop = false;
@@ -90,12 +90,12 @@
             // 
             textBox2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             textBox2.BackColor = Color.Silver;
-            textBox2.Font = new Font("Reem Kufi", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            textBox2.Font = new Font("Palatino Linotype", 12F, FontStyle.Bold, GraphicsUnit.Point);
             textBox2.ForeColor = Color.Black;
-            textBox2.Location = new Point(259, 354);
+            textBox2.Location = new Point(259, 401);
             textBox2.Name = "textBox2";
             textBox2.PlaceholderText = "Пароль";
-            textBox2.Size = new Size(290, 31);
+            textBox2.Size = new Size(290, 29);
             textBox2.TabIndex = 16;
             textBox2.TextAlign = HorizontalAlignment.Center;
             textBox2.UseSystemPasswordChar = true;
@@ -104,11 +104,11 @@
             // 
             button1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             button1.BackColor = Color.Black;
-            button1.Font = new Font("Reem Kufi", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            button1.Font = new Font("Palatino Linotype", 12F, FontStyle.Bold, GraphicsUnit.Point);
             button1.ForeColor = Color.AliceBlue;
-            button1.Location = new Point(259, 406);
+            button1.Location = new Point(259, 460);
             button1.Name = "button1";
-            button1.Size = new Size(289, 39);
+            button1.Size = new Size(289, 44);
             button1.TabIndex = 15;
             button1.Text = "Создать  аккаунт";
             button1.UseVisualStyleBackColor = false;
@@ -119,11 +119,11 @@
             label1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             label1.AutoSize = true;
             label1.FlatStyle = FlatStyle.System;
-            label1.Font = new Font("Reem Kufi", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Font = new Font("Palatino Linotype", 18F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = SystemColors.ActiveCaptionText;
-            label1.Location = new Point(280, 210);
+            label1.Location = new Point(327, 241);
             label1.Name = "label1";
-            label1.Size = new Size(243, 44);
+            label1.Size = new Size(166, 32);
             label1.TabIndex = 14;
             label1.Text = "Регистрация";
             label1.TextAlign = ContentAlignment.MiddleCenter;
@@ -132,20 +132,20 @@
             // 
             textBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             textBox1.BackColor = Color.Silver;
-            textBox1.Font = new Font("Reem Kufi", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            textBox1.Font = new Font("Palatino Linotype", 12F, FontStyle.Bold, GraphicsUnit.Point);
             textBox1.ForeColor = Color.Black;
-            textBox1.Location = new Point(261, 280);
+            textBox1.Location = new Point(261, 317);
             textBox1.Name = "textBox1";
             textBox1.PlaceholderText = "ФИО";
-            textBox1.Size = new Size(290, 31);
+            textBox1.Size = new Size(290, 29);
             textBox1.TabIndex = 21;
             textBox1.TextAlign = HorizontalAlignment.Center;
             // 
             // Register
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(7F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(801, 513);
+            ClientSize = new Size(801, 581);
             Controls.Add(textBox1);
             Controls.Add(linkLabel1);
             Controls.Add(maskedTextBox1);
@@ -154,6 +154,7 @@
             Controls.Add(textBox2);
             Controls.Add(button1);
             Controls.Add(label1);
+            Font = new Font("Palatino Linotype", 9F, FontStyle.Regular, GraphicsUnit.Point);
             MaximizeBox = false;
             Name = "Register";
             Text = "Register";

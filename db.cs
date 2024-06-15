@@ -16,7 +16,9 @@ namespace Nail_salon
         public void createTables()
         {
             string[] Queryes = {
-                "CREATE TABLE IF NOT EXISTS Users (id  INTEGER NOT NULL UNIQUE  PRIMARY KEY AUTOINCREMENT ,fio TEXT,phone TEXT,password TEXT, isAdmin bool)",
+                "CREATE TABLE IF NOT EXISTS Users(id INTEGER NOT NULL UNIQUE  PRIMARY KEY AUTOINCREMENT, fio TEXT,phone TEXT,password TEXT, isAdmin bool)",
+                "CREATE TABLE IF NOT EXISTS Services(id INTEGER NOT NULL UNIQUE  PRIMARY KEY AUTOINCREMENT, name TEXT, price INT)",
+                "CREATE TABLE IF NOT EXISTS Analytics(id INTEGER NOT NULL UNIQUE  PRIMARY KEY AUTOINCREMENT, masterName TEXT, amountRecords INT, earningsPerDay TEXT, bonusForWork TEXT, deductionForPoorQuatily TEXT  )"
             };
 
             SQLiteConnection connection = createConnection();
@@ -70,7 +72,81 @@ namespace Nail_salon
 
         }
 
-       
+        public List<string[]> GetUsers()
+        {
+            {
+                List<string[]> data = new List<string[]>();
+                SQLiteConnection connection = createConnection();
+                connection.Open();
+                string query = "select * from Users";
+                SQLiteCommand command = new SQLiteCommand(query, connection);
+                SQLiteDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    data.Add(new string[5]);
+                    data[data.Count - 1][0] = reader[0].ToString();
+                    data[data.Count - 1][1] = reader[1].ToString();
+                    data[data.Count - 1][2] = reader[2].ToString();
+                    data[data.Count - 1][3] = reader[3].ToString();
+                    data[data.Count - 1][4] = reader[4].ToString();
+
+                }
+                reader.Close();
+                connection.Close();
+                return data;
+            }
+        }
+
+        public List<string[]> GetServices()
+        {
+            {
+                List<string[]> data = new List<string[]>();
+                SQLiteConnection connection = createConnection();
+                connection.Open();
+                string query = "select * from Services";
+                SQLiteCommand command = new SQLiteCommand(query, connection);
+                SQLiteDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    data.Add(new string[3]);
+                    data[data.Count - 1][0] = reader[0].ToString();
+                    data[data.Count - 1][1] = reader[1].ToString();
+                    data[data.Count - 1][2] = reader[2].ToString();
+
+                }
+                reader.Close();
+                connection.Close();
+                return data;
+            }
+        }
+
+        public List<string[]> GetAnalytics()
+        {
+            {
+                List<string[]> data = new List<string[]>();
+                SQLiteConnection connection = createConnection();
+                connection.Open();
+                string query = "select * from Analytics";
+                SQLiteCommand command = new SQLiteCommand(query, connection);
+                SQLiteDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    data.Add(new string[6]);
+                    data[data.Count - 1][0] = reader[0].ToString();
+                    data[data.Count - 1][1] = reader[1].ToString();
+                    data[data.Count - 1][2] = reader[2].ToString();
+                    data[data.Count - 1][3] = reader[3].ToString();
+                    data[data.Count - 1][4] = reader[4].ToString();
+                    data[data.Count - 1][5] = reader[5].ToString();
+
+                }
+                reader.Close();
+                connection.Close();
+                return data;
+            }
+        }
+
+
 
     }
 }

@@ -15,7 +15,16 @@ namespace Nail_salon
 
         private void button1_Click(object sender,EventArgs e)
         {
-
+            if (textBox2.Text == "admin")
+            {
+                Admin admin = new();
+                admin.Show();
+                this.Hide();
+                return;
+            }
+            Menu menu = new();
+            menu.Show();
+            this.Hide();
         }
 
 
